@@ -9,8 +9,12 @@ import java.io.FileNotFoundException;
  */
 public class Main {
 
-    public static void main(String[] args) throws FileNotFoundException {
-        FileInputStream is = new FileInputStream("jakisPlik.txt");
+    public static void main(String[] args) {
+        try {
+            FileInputStream is = new FileInputStream("jakisPlik.txt");
+        } catch (FileNotFoundException e) {
+            System.out.println("Pliku nie ma");
+        }
 
     }
 }
