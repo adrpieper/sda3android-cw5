@@ -9,5 +9,6 @@ public class NightClub {
         if (person.getAge() < 18) {
             throw new PersonIsNotAnAdultException();
         }
+        System.out.println("Hallo");
     }
 }
